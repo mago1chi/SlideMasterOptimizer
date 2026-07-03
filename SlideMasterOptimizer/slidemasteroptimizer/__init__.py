@@ -1,0 +1,2 @@
+"""SlideMasterOptimizer application package."""
+

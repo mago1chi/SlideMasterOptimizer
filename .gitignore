@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+.pytest_cache/
+.uv-cache/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
