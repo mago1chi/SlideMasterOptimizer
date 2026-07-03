@@ -17,3 +17,6 @@ env/
 
 # User-facing docs are distributed as README.txt for this app
 SlideMasterOptimizer/README.md
+
+# Local agent working notes
+AGENTS.md
