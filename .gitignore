@@ -14,3 +14,6 @@ env/
 
 # Environment variables
 .env
+
+# User-facing docs are distributed as README.txt for this app
+SlideMasterOptimizer/README.md
