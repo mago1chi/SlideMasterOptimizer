@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from PySide6.QtCore import QThread, Qt, Signal
-from PySide6.QtGui import QDragEnterEvent, QDropEvent
+from PySide6.QtGui import QDragEnterEvent, QDropEvent, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QFileDialog,
@@ -125,6 +125,9 @@ class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
         self.setWindowTitle("SlideMasterOptimizer")
+        icon_path = Path(__file__).resolve().parents[2] / "assets" / "favicon.ico"
+        if icon_path.exists():
+            self.setWindowIcon(QIcon(str(icon_path)))
         self.resize(940, 720)
         self._input_path: Path | None = None
         self._analysis: AnalysisResult | None = None
